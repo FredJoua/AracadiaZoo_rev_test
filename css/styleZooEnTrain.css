@@ -1,0 +1,36 @@
+/* Style du jumbotron pour la page Restauration */
+.restaurant-header {
+  background-image: url("../img/TRAINZoo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+}
+.restaurant-header-text {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-color: rgba(11, 149, 244, 0.6);
+  padding: 15px;
+}
+
+.custom-card {
+  height: 450px; /* Hauteur fixe pour les cartes */
+}
+
+.custom-card .card-img-top {
+  height: 300px !important; /* Hauteur fixe */
+  object-fit: cover; /* Remplit l'espace tout en gardant les proportions */
+  width: 100%; /* Prend toute la largeur de la carte */
+}
+
+.card-title,
+.card-text {
+  overflow: hidden; /* Masque le texte excédentaire */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limite à 3 lignes pour WebKit */
+  line-clamp: 3; /* Propriété standard (pas encore totalement supportée) */
+  max-height: 4.5em; /* Ajuste la hauteur pour 3 lignes */
+}

@@ -1,0 +1,36 @@
+.custom-card {
+  height: 450px; /* Hauteur fixe pour les cartes */
+} /* Ferme la classe .custom-card */
+
+.custom-img {
+  height: 300px; /* Hauteur fixe pour les images */
+  object-fit: cover; /* Pour conserver les proportions de l'image */
+} /* Ferme la classe .custom-img */
+
+.card-title,
+.card-text {
+  /* overflow: hidden;  Masquer le texte supplémentaire */
+  /* text-overflow: ellipsis; Ajouter des points de suspension si le texte est trop long */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limite le texte à 3 lignes pour les navigateurs Webkit */
+  line-clamp: 3;
+  height: 1.5em;
+}
+
+.header-image {
+  background-image: url("../img/pageAccueil.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  background-color: rgba(11, 149, 244, 0.6);
+  padding: 15px;
+}

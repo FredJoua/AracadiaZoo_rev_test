@@ -1,0 +1,19 @@
+.custom-card {
+  height: 450px; /* Hauteur fixe pour les cartes */
+}
+
+.custom-img {
+  height: 300px !important;
+  object-fit: cover;
+  width: 100% !important;
+}
+
+.card-title,
+.card-text {
+  -webkit-line-clamp: 3; /* Limite le texte à 3 lignes dans les navigateurs Webkit */
+  line-clamp: 3; /* Propriété standard pour futurs navigateurs */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Ajoute des points de suspension si le texte est trop long */
+}
