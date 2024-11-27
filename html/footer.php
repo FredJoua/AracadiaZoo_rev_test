@@ -42,31 +42,36 @@
             >
               <div class="carousel-inner">
                 <?php
-                            // Connexion à la base de données
-                            $db_host = "localhost";
-                            $db_name = "db_arcadiaZoo";
-                            $db_user = "root";
-                            $db_password = "root";
+                // Connexion à la base de données
+                $db_host = "localhost";
+                $db_name = "db_arcadiaZoo";
+                $db_user = "root";
+                $db_password = "root";
 
-                            try {
-                                $conn = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
-                                $conn->setAttribute(PDO::ATTR_ERRMODE,
-                PDO::ERRMODE_EXCEPTION); // Requête pour récupérer les
-                commentaires publiés $query = "SELECT * FROM visiteurs WHERE
-                statut = 'Publié' ORDER BY date_validation DESC LIMIT 2";
-                $result = $conn->query($query); // Récupérer les commentaires
-                dans un tableau $active = true; while ($row =
-                $result->fetch(PDO::FETCH_ASSOC)) { // Ajouter le commentaire
-                dans une div avec la classe carousel-item echo '
-                <div
-                  class="carousel-item'; if ($active) { echo ' active'; $active = false; } echo '"
-                >
-                  '; echo '
-                  <p>' . $row['commentaires'] . '</p>
-                  '; echo '
-                </div>
-                '; } } catch (PDOException $e) { echo "Erreur : " .
-                $e->getMessage(); } ?>
+                try {
+                    $conn = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_password);
+                    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                    
+                    // Requête pour récupérer les commentaires publiés
+                    $query = "SELECT * FROM visiteurs WHERE statut = 'Publié' ORDER BY date_validation DESC LIMIT 2";
+                    $result = $conn->query($query);
+
+                    $active = true; 
+                    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
+                        // Ajouter le commentaire dans une div avec la classe carousel-item
+                        echo '<div class="carousel-item';
+                        if ($active) {
+                            echo ' active';
+                            $active = false;
+                        }
+                        echo '">';
+                        echo '<p>' . htmlspecialchars($row['commentaires']) . '</p>';
+                        echo '</div>';
+                    }
+                } catch (PDOException $e) {
+                    echo "Erreur : " . $e->getMessage();
+                }
+                ?>
               </div>
               <button
                 class="carousel-control-prev"
@@ -112,17 +117,17 @@
               Adresse
             </h5>
             <ul class="list-unstyled text-white">
-              <li class="text-white text-left horizontal-align: middle;">
-                <i class="fas fa-home mr-3" style="margin-right: 10px"></i> 2,
-                rue de Grosne, 90130 Bretagne
+              <li class="text-white text-left">
+                <i class="fas fa-home" style="margin-right: 10px"></i>
+                2, rue de Grosne, 90130 Bretagne
               </li>
               <li class="text-white text-left">
-                <i class="fas fa-envelope mr-3" style="margin-right: 10px"></i>
+                <i class="fas fa-envelope" style="margin-right: 10px"></i>
                 info@arcadiazoo.com
               </li>
               <li class="text-white text-left">
-                <i class="fas fa-phone mr-3" style="margin-right: 10px"></i> 03
-                70 02 00 00
+                <i class="fas fa-phone" style="margin-right: 10px"></i>
+                03 70 02 00 00
               </li>
             </ul>
           </div>
@@ -137,7 +142,7 @@
       </div>
     </footer>
 
-    <!-- Carrousel Bootstrap -->
+    <!-- Scripts Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -153,7 +158,7 @@
       // Fonction pour mettre à jour le contenu du carrousel avec les commentaires
       function updateCarousel() {
         // Récupérer l'élément de la liste du carrousel
-        var commentElement = document.querySelector(".commentCarousel ul");
+        var commentElement = document.querySelector(".carousel-inner");
 
         // Récupérer les commentaires depuis getComments.php
         fetch("getComments.php")
@@ -163,10 +168,11 @@
             commentElement.innerHTML = "";
 
             // Ajouter chaque commentaire à la liste du carrousel
-            comments.forEach((comment) => {
-              var li = document.createElement("li");
-              li.textContent = comment;
-              commentElement.appendChild(li);
+            comments.forEach((comment, index) => {
+              const div = document.createElement("div");
+              div.className = `carousel-item ${index === 0 ? "active" : ""}`;
+              div.innerHTML = `<p>${comment}</p>`;
+              commentElement.appendChild(div);
             });
           })
           .catch((error) =>
