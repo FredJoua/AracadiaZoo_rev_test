@@ -37,27 +37,11 @@ if (isset($_GET['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Détails de l'Habitat</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .card {
-            width: 24rem;
-            margin: 100px auto 0 auto; /* 100px de marge en haut pour laisser de la place au header */
-        }
-        .carousel-item img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
-        .details-header {
-            font-weight: bold;
-        }
-        .content-wrapper {
-            margin-bottom: 100px; /* Espace pour le footer */
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styleDetailHabitats.css">
 </head>
 <body>
     <header class="bg-primary text-white text-center py-3">
-        <?php include_once "../header.php"; ?>
+        <?php include_once "../pagesFront/header.php"; ?>
     </header>
 
     <div class="container-fluid p-0">
@@ -103,6 +87,6 @@ if (isset($_GET['id'])) {
         <?php endif; ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <?php include "../footer.php"; ?>
+    <?php include "../pagesFront/footer.php"; ?>
 </body>
 </html>

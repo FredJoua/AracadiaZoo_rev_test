@@ -23,32 +23,12 @@ $habitats = $query->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Habitats Jungle</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .card {
-            width: 15rem;
-            margin: 30px auto 65px auto; /* 100px de marge en haut pour laisser de la place au header, 50px de marge en bas pour l'espace avec le footer */
-        }
-        .card-img-top {
-            height: 200px; /* Ajustez cette hauteur selon vos besoins */
-            object-fit: cover;
-        }
-        .card-custom {
-            width: 18rem;
-        }
-        .card-body {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-        .btn-group {
-            margin-top: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/styleHabitatsJungle.css">
 </head>
 <body>
     <header class="bg-primary text-white text-center py-3">
         <?php
-        include_once "../header.php"; 
+        include_once "../pagesFront/header.php"; 
         ?>
     </header>
 
@@ -83,6 +63,6 @@ $habitats = $query->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <?php include "../footer.php"; ?> 
+    <?php include "../pagesFront/footer.php"; ?> 
 </body>
 </html>

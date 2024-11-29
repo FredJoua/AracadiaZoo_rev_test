@@ -25,12 +25,21 @@
   width: 100%; /* Prend toute la largeur de la carte */
 }
 
-.card-title,
+.card-title {
+  font-size: 1.25rem; /* Ajustez selon vos besoins */
+  margin-bottom: 0.5rem;
+}
+
 .card-text {
   overflow: hidden; /* Masque le texte excédentaire */
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3; /* Limite à 3 lignes pour WebKit */
-  line-clamp: 3; /* Propriété standard (pas encore totalement supportée) */
+  -webkit-line-clamp: 3; /* Limite à 3 lignes */
+  line-clamp: 3;
   max-height: 4.5em; /* Ajuste la hauteur pour 3 lignes */
+  line-height: 1.5em;
+  font-size: 1rem;
+
+  /* Ajout d'une hauteur minimale uniforme */
+  min-height: 4.5em; /* Fixe une hauteur cohérente pour tous */
 }

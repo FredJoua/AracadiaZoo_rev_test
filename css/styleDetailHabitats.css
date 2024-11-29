@@ -1,0 +1,15 @@
+.card {
+  width: 24rem;
+  margin: 100px auto 0 auto; /* 100px de marge en haut pour laisser de la place au header */
+}
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.details-header {
+  font-weight: bold;
+}
+.content-wrapper {
+  margin-bottom: 100px; /* Espace pour le footer */
+}
