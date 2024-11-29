@@ -1,6 +1,6 @@
 <?php
 session_start(); //Appel à session_start() en début de fichier
-include_once "html/header.php"; // Inclusion du header après session_start()
+include_once "pagesFront/header.php"; // Inclusion du header après session_start()
 ?>
 
 <!DOCTYPE html>
@@ -62,5 +62,5 @@ include_once "html/header.php"; // Inclusion du header après session_start()
   </main>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
-    <?php include "./html/footer.php" ?>
+    <?php include "./pagesFront/footer.php" ?>
 </html>

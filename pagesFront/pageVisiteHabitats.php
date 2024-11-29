@@ -32,7 +32,7 @@ include "header.php"; // Inclusion du header après session_start()
     </style>
 <body>
     <div class="container-fluid p-0">
-        <div class="jumbotron bg-cover text-white mb-0" style="background-image: url(img/pageHabitats.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 50vh; position: relative;">
+        <div class="jumbotron bg-cover text-white mb-0" style="background-image: url(../img/pageHabitats.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; height: 50vh; position: relative;">
             <div class="container py-5" style="position: absolute; bottom: 0; left: 50px; background-color: rgba(11, 149, 244, 0.6); padding: 15px;">
                 <h1 class="display-4 font-weight-bold">L'Habitat des Animaux</h1>
             </div>
@@ -56,7 +56,7 @@ include "header.php"; // Inclusion du header après session_start()
             <div class="col-md-4">
                 <a href="pageSavane.php" class="text-decoration-none text-dark">
                     <div class="card mb-3 custom-card">
-                        <img src="img/savane.jpg" class="card-img-top custom-img" alt="Photo 1">
+                        <img src="../img/savane.jpg" class="card-img-top custom-img" alt="Photo 1">
                         <div class="card-body">
                             <h5 class="card-title">La Savane d'Arcadia</h5>
                             <p class="card-text">Des points d’observation panoramiques invitent les visiteurs à s’évader, le temps d’un instant, sur les bords d’un point d’eau du Niger.</p><br>
@@ -67,7 +67,7 @@ include "header.php"; // Inclusion du header après session_start()
             <div class="col-md-4">
                 <a href="pageJungle.php" class="text-decoration-none text-dark">
                     <div class="card mb-3 custom-card">
-                        <img src="img/Jungle1.jpg" class="card-img-top custom-img" alt="Photo 2">
+                        <img src="../img/Jungle1.jpg" class="card-img-top custom-img" alt="Photo 2">
                         <div class="card-body">
                             <h5 class="card-title">La Jungle d'Arcadia</h5>
                             <p class="card-text">Nos animaux de la jungle sont sûrement parmi les animaux les plus actifs et les plus adroits du parc.</p><br>
@@ -78,7 +78,7 @@ include "header.php"; // Inclusion du header après session_start()
             <div class="col-md-4">
                 <a href="pageMarais.php" class="text-decoration-none text-dark">
                     <div class="card mb-3 custom-card">
-                        <img src="img/Hipo.jpg" class="card-img-top custom-img" alt="Photo 3">
+                        <img src="../img/Hipo.jpg" class="card-img-top custom-img" alt="Photo 3">
                         <div class="card-body">
                             <h5 class="card-title">Le Marais d'Arcadia</h5>
                             <p class="card-text">Un exemple tout simple, venez vous mettre en immersion sur le territoire d'une famille de Rhinocéros </p><br>
