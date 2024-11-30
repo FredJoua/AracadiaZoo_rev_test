@@ -1,6 +1,7 @@
 .custom-card {
   height: 450px; /* Hauteur fixe pour les cartes */
 }
+<<<<<<< Updated upstream
 
 .custom-card .card-img-top {
   height: 300px !important; /* Hauteur fixe */
@@ -13,10 +14,18 @@
   margin-bottom: 0.5rem;
 }
 
+=======
+.custom-img {
+  height: 300px; /* Hauteur fixe pour les images */
+  object-fit: cover; /* Pour conserver les proportions de l'image */
+}
+.card-title,
+>>>>>>> Stashed changes
 .card-text {
   overflow: hidden; /* Masque le texte excédentaire */
   display: -webkit-box;
   -webkit-box-orient: vertical;
+<<<<<<< Updated upstream
   -webkit-line-clamp: 3; /* Limite à 3 lignes */
   line-clamp: 3;
   max-height: 4.5em; /* Ajuste la hauteur pour 3 lignes */
@@ -25,4 +34,9 @@
 
   /* Ajout d'une hauteur minimale uniforme */
   min-height: 4.5em; /* Fixe une hauteur cohérente pour tous */
+=======
+  -webkit-line-clamp: 3; /* Limite à 3 lignes pour WebKit */
+  line-clamp: 3; /* Propriété standard (pas encore totalement supportée) */
+  max-height: 4.5em; /* Ajuste la hauteur pour 3 lignes */
+>>>>>>> Stashed changes
 }
