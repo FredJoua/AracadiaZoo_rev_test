@@ -2,7 +2,7 @@
 //test 1906
 session_start();
 include "../dbconn.php";
-include_once "../headerLogout.php";
+include_once "../pagesFront/headerLogout.php";
 
 if (isset($_POST['submit'])) {
     if (!empty($_POST['email']) && !empty($_POST['motdepasse'])) {
@@ -43,8 +43,6 @@ if (isset($_POST['submit'])) {
 // Fermez la connexion à la base de données
 $conn = null;
 ?>
-
-
 
 <!doctype html>
 <html lang="en">
@@ -98,6 +96,6 @@ $conn = null;
         </div>
     </section>
 
-    <?php include "../footer.php" ?>
+    <?php include "../pagesFront/footer.php" ?>
 </body>
 </html>

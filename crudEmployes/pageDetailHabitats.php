@@ -57,7 +57,7 @@
 </head>
 <body>
     <header class="bg-primary text-white text-center py-3">
-        <?php include_once "../header.php"; ?>
+        <?php include_once "../pagesFront/header.php"; ?>
     </header>
 
     <div class="container-fluid p-0">
@@ -104,5 +104,5 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-    <?php include "../footer.php"; ?>
+    <?php include "../pagesFront/footer.php"; ?>
 </html>

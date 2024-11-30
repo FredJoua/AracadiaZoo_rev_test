@@ -15,42 +15,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/styleHeader.css">
+    <link rel="stylesheet" href="../css/styleHeader.css">
+    <link rel="stylesheet" href="../css/styleHeader.css">
     <title>Arcadia Zoo_NAVBAR </title>
-
-    <style>
-        /* Effet d'atténuation (opacité) sur les éléments du menu lors du survol */
-        .nav-link {
-            transition: all 0.3s ease; /* Ajout d'une transition pour l'effet en douceur */
-            position: relative; /* Nécessaire pour l'ajout du fond opaque */
-            z-index: 1;
-        }
-
-        .nav-link::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(70, 70, 70, 0.250); /* Couleur noire avec opacité */
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 0.3s ease; /* Ajout d'une transition pour l'effet en douceur */
-        }
-
-        .nav-link:hover::before {
-            opacity: 1; /* Affiche le fond opaque lors du survol */
-            border-radius: 4px; /* Ajoute des coins arrondis */
-        }
-    </style>
 </head>
-
 <body>
     <header class="custom-header"> 
         <nav class="navbar navbar-expand-md navbar-orange bg-light shadow-sm fixed-top">
             <div class="container">
-                <a href="../../index.php" class="navbar-brand">
+                <a href="../index.php" class="navbar-brand">
                     <!-- Logo Image -->
                     <img src="../img/logoZoo.png" width="85" alt="logo" class="d-inline-block align-middle mr-2">
                 </a>
@@ -71,9 +44,9 @@
                                 Services
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="../../../pageVisiteHabitats.php">Visite Guidée Habitat</a>
-                                <a class="dropdown-item" href="../../../pageZooEnTrain.php">Viste du Zoo en Train</a>
-                                <a class="dropdown-item" href="../../../pageRestaurant.php">Restaurant</a>
+                                <a class="dropdown-item" href="../pagesFront/pageVisiteHabitats.php">Visite Guidée Habitat</a>
+                                <a class="dropdown-item" href="../pagesFront/pageZooEnTrain.php">Viste du Zoo en Train</a>
+                                <a class="dropdown-item" href="../pagesFront/pageRestaurant.php">Restaurant</a>
                             </div>
                         </li>
                       
