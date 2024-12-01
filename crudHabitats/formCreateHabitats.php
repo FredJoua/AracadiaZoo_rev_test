@@ -58,22 +58,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créer employés</title>
 
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css">
     <style>
         body {
             padding-top: 75px; 
         }
-
-        .container form {
-            margin-bottom: 150px; /* Ajoutez un espace de 50px entre le formulaire et le footer */
+        .mb-5 {
+            margin-bottom: 50px; 
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <?php include_once '../headerLogout.php'; ?>
-    </header>
+    <?php include_once "../pagesFront/headerLogout.php"; ?>
 
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -136,11 +133,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <button type="submit" name="submit" class="btn btn-outline-success">Enregistrer</button>
                         </div>
                         <div class="d-grid gap-2 col-6 mx-auto">
-                            <a href="listingEmployes.php" class="btn btn-outline-danger">Annuler</a>
+                            <a href="tableListingHabitats.php" class="btn btn-outline-danger">Annuler</a>
                         </div>
                     </div>
                     
-                    <div class="mt-3">
+                    <div class="mt-3 mb-5">
                         <!-- Lien de redirection après succès -->
                         <a href="../index.php" class="btn btn-secondary">Retour à la page d'accueil</a>
                     </div>
@@ -149,8 +146,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
     </div>
 
-    <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-    <?php include_once '../footer.php'; ?>
+    <?php include "../pagesFront/footer.php"; ?>
 </html>

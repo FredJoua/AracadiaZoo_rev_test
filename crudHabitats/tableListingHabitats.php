@@ -66,7 +66,7 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
 </head>
 <body>
     <header>
-        <?php include_once '../headerLogout.php'; ?>
+        <?php include_once '../pagesFront/headerLogout.php'; ?>
     </header>
  
     <section class="container my-5 mt-4">
@@ -155,5 +155,5 @@ while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
 </body>
-    <?php include_once '../footer.php'; ?>
+    <?php include_once '../pagesFront/footer.php'; ?>
 </html>

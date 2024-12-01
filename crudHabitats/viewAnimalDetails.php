@@ -8,7 +8,7 @@
     </head>
     <body>
         <?php include "tableListingHabitats.php" ?>
-        <?php include "../headerLogout.php" ?>
+        <?php include "../pagesFront/headerLogout.php" ?>
         <header>
 
         </header>
@@ -42,6 +42,6 @@
                 }
             ?>
         </table>
-        <?php include "../footer.php" ?>
+        <?php include "../pagesFront/footer.php" ?>
     </body>
 </html>
