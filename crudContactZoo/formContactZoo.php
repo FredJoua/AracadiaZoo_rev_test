@@ -1,7 +1,6 @@
 <?php
 include_once "../dbconn.php"; 
-include_once "../headerLogout.php"; 
-
+include_once "../pagesFront/header.php"; 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Récupérer les données du formulaire
@@ -49,18 +48,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contactez-nous</title>
 
-    <!-- Bootstrap CSS-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Bootstrap links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
+    <!-- Font Awesome CDN link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styleHeader.css">
+    <link rel="stylesheet" href="../pagesFront/footer.php">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleFooter.css">
+    <style>
+        body {
+            padding-top: 75px; /* Ajustez cette valeur selon besoins */
+        }
+        .container form {
+            margin-bottom: 150px; /* Ajoutez un espace de 50px entre le formulaire et le footer */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -105,5 +109,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </section>
 
 </body>
-<?php include "../footer.php" ?>
+<?php include "../pagesFront/footer.php" ?>
 </html>
