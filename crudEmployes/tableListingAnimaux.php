@@ -21,14 +21,14 @@ if (!$result){
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css">
     <!-- Font Awesome CDN link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="../css/styleHeader.css">
 
     <style>
         body {
-            padding-top: 75px; /* Ajustez cette valeur selon besoins */
+            padding-top: 75px; 
         }
         .container form {
-            margin-bottom: 150px; /* Ajoutez un espace de 50px entre le formulaire et le footer */
+            margin-bottom: 75px; 
         }
     </style>
 
@@ -48,7 +48,6 @@ if (!$result){
             <thead class="table-light">
                 <tr>
                     <th data-sortable="true" data-field="id">ID Habitat</th>
-                    <th data-sortable="true" data-field="nom">Prenom</th>
                     <th>Etat de l'Animal</th>
                     <th>Nourriture</th>
                     <th>Grammage</th>
