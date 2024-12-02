@@ -1,6 +1,6 @@
 <?php
 include_once '../dbconn.php';
-include_once '../header.php';
+include_once '../pagesFront/header.php';
 
 if ($conn === null) {
     die("Erreur de connexion à la base de données.");
@@ -75,7 +75,8 @@ $days = [
     </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+
 </body>
-<?php include "../footer.php"; ?>
+    <?php include "../pagesFront/footer.php"; ?>
 </html>
 <?php $conn = null; ?>
