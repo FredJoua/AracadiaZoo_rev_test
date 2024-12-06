@@ -40,25 +40,37 @@ $habitats = $query->fetchAll(PDO::FETCH_ASSOC);
 
     <div class="container mt-5 mb-5">
         <div class="row">
-            <?php foreach ($habitats as $habitat): ?>
-            <div class="col-md-4">
-                <div class="card border-0 rounded-0 shadow card-custom">
-                    <?php if (!empty($habitat['image'])): ?>
-                        <img class="card-img-top rounded-0" src="data:image/jpeg;base64,<?php echo base64_encode($habitat['image']); ?>" alt="Image de l'habitat">
-                    <?php else: ?>
-                        <p>Image non disponible</p>
-                    <?php endif; ?>
-                    <div class="card-body mt-3 mb-3">
-                        <h4 class="card-title"><?php echo htmlspecialchars($habitat['prenom_animal']); ?></h4>
-                        <div class="btn-group">
-                            <a href="pageDetailHabitats.php?id=<?php echo $habitat['id_habitat']; ?>" class="btn btn-sm btn-outline-secondary">Voir Détail</a>
-                        </div>
-                    </div>
+            <div class="col-md-3">
+                <div class="info-text">
+                    <h3>Bienvenue dans la Savane !</h3>
+                    <p>Explorez la savane africaine et découvrez ses incroyables habitants : lions majestueux, éléphants imposants, girafes gracieuses et bien d'autres. Notre espace "Habitats Savane" reproduit fidèlement cet écosystème fascinant, vous offrant une expérience immersive unique.</p>
+                    <p>Apprenez-en davantage sur la vie sauvage et les efforts de conservation pour protéger ces espèces emblématiques. Merci de soutenir la biodiversité en visitant notre zoo. Bonne visite !</p>
                 </div>
             </div>
-            <?php endforeach; ?>
+            <div class="col-md-9">
+                <div class="row">
+                    <?php foreach ($habitats as $habitat): ?>
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 rounded-0 shadow card-custom">
+                            <?php if (!empty($habitat['image'])): ?>
+                                <img class="card-img-top rounded-0" src="data:image/jpeg;base64,<?php echo base64_encode($habitat['image']); ?>" alt="Image de l'habitat">
+                            <?php else: ?>
+                                <p>Image non disponible</p>
+                            <?php endif; ?>
+                            <div class="card-body mt-3 mb-3">
+                                <h4 class="card-title"><?php echo htmlspecialchars($habitat['prenom_animal']); ?></h4>
+                                <div class="btn-group">
+                                    <a href="pageDetailHabitats.php?id=<?php echo $habitat['id_habitat']; ?>" class="btn btn-sm btn-outline-secondary">Voir Détail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <?php include "../pagesFront/footer.php"; ?> 
 </body>

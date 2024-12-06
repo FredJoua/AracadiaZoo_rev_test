@@ -42,26 +42,37 @@ $habitats = $query->fetchAll(PDO::FETCH_ASSOC);
 
     <div class="container mt-5 mb-5">
         <div class="row">
-<?php foreach ($habitats as $habitat): ?>
-    <div class="col-md-4">
-        <div class="card border-0 rounded-0 shadow card-custom">
-            <?php if (!empty($habitat['image'])): ?>
-                <img class="card-img-top rounded-0" src="data:image/jpeg;base64,<?php echo base64_encode($habitat['image']); ?>" alt="Image de l'habitat">
-            <?php else: ?>
-                <p>Image non disponible</p>
-            <?php endif; ?>
-            <div class="card-body mt-3 mb-3">
-                <h4 class="card-title"><?php echo htmlspecialchars($habitat['prenom_animal']); ?></h4>
-                <div class="btn-group">
-                    <a href="pageDetailHabitats.php?id=<?php echo $habitat['id_habitat']; ?>" class="btn btn-sm btn-outline-secondary">Voir Détail</a>
+            <div class="col-md-3">
+                <div class="info-text">
+                    <h3>Bienvenue dans la Jungle !</h3>
+                    <p>Plongez au cœur de la jungle et découvrez un monde luxuriant et vibrant. Rencontrez des singes espiègles, des oiseaux colorés et des reptiles fascinants dans un habitat recréé pour refléter cette biodiversité incroyable.</p>
+                    <p>Apprenez-en davantage sur les secrets de la jungle et les efforts de conservation pour protéger ces précieux écosystèmes. Merci de votre visite et de votre soutien à la préservation de la nature. Bonne exploration !</p>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <?php foreach ($habitats as $habitat): ?>
+                    <div class="col-md-6 mb-4">
+                        <div class="card border-0 rounded-0 shadow card-custom">
+                            <?php if (!empty($habitat['image'])): ?>
+                                <img class="card-img-top rounded-0" src="data:image/jpeg;base64,<?php echo base64_encode($habitat['image']); ?>" alt="Image de l'habitat">
+                            <?php else: ?>
+                                <p>Image non disponible</p>
+                            <?php endif; ?>
+                            <div class="card-body mt-3 mb-3">
+                                <h4 class="card-title"><?php echo htmlspecialchars($habitat['prenom_animal']); ?></h4>
+                                <div class="btn-group">
+                                    <a href="pageDetailHabitats.php?id=<?php echo $habitat['id_habitat']; ?>" class="btn btn-sm btn-outline-secondary">Voir Détail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
     </div>
-<?php endforeach; ?>
-
-        </div>
-    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <?php include "../pagesFront/footer.php"; ?> 
 </body>
