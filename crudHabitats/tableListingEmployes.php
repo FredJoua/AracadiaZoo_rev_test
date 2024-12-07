@@ -47,7 +47,7 @@ if (!$result){
     </header>
 
     <section class="container my-5 mt-4">
-        <h3 class="custom-title">Liste table employes</h3>
+        <h3 class="custom-title">Liste table Comptes Rendus des Employés</h3>
         <a class="btn btn-outline-success" href="../crudEmployes/adminPageEmployes.php" role="button">Retours Espcace Employés</a>
         <br>
         <hr>
@@ -56,7 +56,7 @@ if (!$result){
 
                 <tr>
                     <!-- Sous-colonnes pour Rapport Employé -->
-                    <th colspan="6" class="centered-header">Comptes Rendus Employé</th>
+                    <th colspan="6" class="centered-header">Comptes Rendus Employés</th>
                 </tr>
                 <tr>
                     <!-- Colonnes spécifiques pour Rapport Employé -->
