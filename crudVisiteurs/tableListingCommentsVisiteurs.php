@@ -72,7 +72,7 @@
     <?php include_once "../pagesFront/headerLogout.php"; ?>
 
     <section class="container my-5">
-        <h3>Liste des Commentaires</h3>
+        <h3>Liste Commentaires/avis des visiteurs</h3>
             <a class="btn btn-outline-success my-3" href="../crudEmployes/adminPageEmployes.php" role="button">Retour Espace Employes</a>
             <br>
         <hr>
