@@ -43,9 +43,9 @@
                 <div class="custom-container">
                     <div class="center-content">
                         <h3 class="card-title">Gestion des services</h3><br>
-                        <a class="btn btn-outline-warning" href="../pageVisiteHabitats">Visite Guidée Zoo</a><br>
-                        <a class="btn btn-outline-warning" href="../pageZooEnTrain">Visite Parc en Train</a><br>
-                        <a class="btn btn-outline-warning" href="../pageRestaurant.php">Le Restaurent</a>
+                        <a class="btn btn-outline-warning" href="../pagesFront/pageVisiteHabitats.php">Visite Guidée Habitats</a><br>
+                        <a class="btn btn-outline-warning" href="../pagesFront/pageZooEnTrain.php">Visite Parc en Train</a><br>
+                        <a class="btn btn-outline-warning" href="../pagesFront/pageRestaurant.php">Le Restaurent</a>
                     </div>
                 </div>
             </div>
@@ -68,12 +68,12 @@
                     <div class="center-content">
                         <h3 class="card-title">Les Habitats</h3><br>
                         <div>
-                            <a class="btn btn-outline-warning" href="savane.php" style="margin-right: 30px;">Savane</a>
-                            <a class="btn btn-outline-warning" href="jungle.php">Jungle</a>
+                            <a class="btn btn-outline-warning" href="../crudHabitats/habitatsSavane.php" style="margin-right: 30px;">Savane</a>
+                            <a class="btn btn-outline-warning" href="../crudHabitats/habitatsJungle.php">Jungle</a>
                         </div>
                         <div style="margin-top: 30px;">
-                            <a class="btn btn-outline-warning" href="marais.php" style="margin-right: 30px;">Marais</a>
-                            <a class="btn btn-outline-warning" href="autreHabitats.php">Autres</a>
+                            <a class="btn btn-outline-warning" href="../crudHabitats/habitatsMarais.php" style="margin-right: 30px;">Marais</a>
+                            <a class="btn btn-outline-warning" href="../crudHabitats/pageTousLesHabitats.php">Tous les Habitats</a>
                         </div>
                     </div>
 
