@@ -14,7 +14,7 @@ if (!$result){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing Comptes Rendu des Employes</title>
+    <title>Listing Comptes Rendu des Employés</title>
 
     <!-- Bootstrap links -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -39,7 +39,7 @@ if (!$result){
         <?php include_once '../pagesFront/headerLogout.php'; ?>
     </header>
     <section class="container my-5 mt-4">
-        <h3 class="custom-title">Liste table employes</h3>
+        <h3 class="custom-title">Table Comptes Rendus par les employés</h3>
         <a class="btn btn-outline-success" href="../crudEmployes/adminPageVeterinaires.php" role="button">Retours Espcace Vétérinaires</a>
         <br>
         <hr>
@@ -48,7 +48,7 @@ if (!$result){
 
                 <tr>
                     <!-- Sous-colonnes pour Rapport Employé -->
-                    <th colspan="6" class="centered-header">Comptes Rendus Employé</th>
+                    <th colspan="6" class="centered-header">Comptes Rendus Employés</th>
                 </tr>
                 <tr>
                     <!-- Colonnes spécifiques pour Rapport Employé -->
