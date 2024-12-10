@@ -92,7 +92,8 @@
             <div class="col-md-4">
                 <div class="custom-container">
                     <div class="center-content">
-                        <h3 class="card-title">Option si le temps: gestion atelier/rdv</h3><br>
+                        <h3 class="card-title">Statistique sur la consultation des habitats</h3><br>
+                        <a class="btn btn-outline-warning" href="../crudHabitats/dashboardConsultations.php">Nombre de vues par animaux</a>
                     </div>
                 </div>
             </div>
