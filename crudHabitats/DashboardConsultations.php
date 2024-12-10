@@ -1,7 +1,7 @@
 <?php
 include_once("../dbconn.php");
 
-$sql = "SELECT prenom_animal, consultations FROM Habitats ORDER BY consultations DESC";
+$sql = "SELECT prenom_animal, consultations FROM habitats ORDER BY consultations DESC";
 $query = $conn->prepare($sql);
 $query->execute();
 $consultations = $query->fetchAll(PDO::FETCH_ASSOC);
@@ -25,7 +25,7 @@ $consultations = $query->fetchAll(PDO::FETCH_ASSOC);
             padding-top: 75px; 
         }
         .mb-5 {
-            margin-bottom: 150px; 
+            margin-bottom: 350px; 
         }
     </style>
 </head>
