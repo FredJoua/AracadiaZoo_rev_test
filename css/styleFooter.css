@@ -23,6 +23,43 @@ footer {
 .contact-info li i {
   margin-right: 10px; /* Espacement entre l'icône et le texte */
 }
+
+/* Carrousel */
+.carousel-inner {
+  position: relative; /* Positionner correctement les éléments à l'intérieur du carrousel */
+  overflow: hidden; /* Empêcher les éléments de sortir du carrousel */
+}
+
 .carousel-item p {
+  text-align: center; /* Centrer les commentaires */
   color: white;
+  margin: 0; /* Supprimer les marges inutiles autour des textes */
+}
+
+/* Les flèches doivent être fixes en bas du carrousel */
+.carousel-controls {
+  position: absolute;
+  bottom: 10px; /* Espace de 10px entre le bas du carrousel et les flèches */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center; /* Centrer les flèches horizontalement */
+  padding: 0; /* Aucune marge ou padding autour des flèches */
+}
+
+/* Styles pour les flèches de navigation */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem; /* Taille des flèches */
+  padding: 0; /* Pas de padding */
+  margin: 0; /* Pas de margin */
+}
+
+/* Effet au survol des flèches */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  transform: scale(1.2); /* Agrandir les flèches lors du survol */
 }

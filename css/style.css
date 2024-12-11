@@ -69,7 +69,7 @@ main {
 .card__text-lg {
   color: #fff;
   font-family: var(--secondary-font); /* Using CSS variable */
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 300;
   text-transform: uppercase;
   line-height: 1.2;
@@ -123,10 +123,10 @@ main {
   background-position: center center;
   box-shadow: inset 0 0 100vw 100vw rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-  width: 100px;
+  width: 125px;
   height: 80%;
   margin: 0 8px;
-  padding: 4px 16px;
+  padding: 4px 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
